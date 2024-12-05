@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import doctorImage from '../assets/doctor.jpg';
+import starImage from '../assets/estrella.png'
+import '../index.css'
 
 const Card = ({ name, username, id }) => {
 
@@ -15,10 +18,13 @@ const Card = ({ name, username, id }) => {
         {/* En cada card deberan mostrar en name - username y el id */}
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
+        <img src={doctorImage} alt="Doctor" className="card-img" />
         <h3>{name}</h3>
         <p>{username}</p>
-        <Link to={`/dentist/${id}`}>Detail</Link>
-        <button onClick={addFav} className="favButton">Add fav</button>
+        <Link to={`/dentist/${id}`}>Detalle</Link>
+        <button onClick={addFav} className="favButton"> 
+          <img src={starImage} alt="Add to favorites" className="star-img" />
+        </button>
     </div>
   );
 };
