@@ -357,6 +357,22 @@ h1 {
   background-color: #555;
 }
 
+/*_________Boton Remover________*/
+
+.removeButton {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.removeButton:hover {
+  background-color: #ff4500;
+}
+
 
 
 
