@@ -32,5 +32,5 @@ export const ContextProvider = ({ children }) => {
 
 // validaciones de las props
 ContextProvider.propTypes = {
-  children: PropTypes.node.isRequired, // Validación -children nodo  obligatorio
+  children: PropTypes.node.isRequired, 
 };
